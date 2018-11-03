@@ -240,6 +240,25 @@ dell_force10_show_version.template, .*, dell_force10, sh[[ow]] ver[[sion]]
 dell_force10_show_vlan.template, .*, dell_force10, sh[[ow]] vl[[an]]
 dell_force10_show_arp.template, .*, dell_force10, sh[[ow]] ar[[p]]
 
+extreme_ers_show_mac-address-table.template, .*, extreme_ers, sh[[ow]] mac-a[[ddress-table]]
+extreme_ers_show_interface_name.template, .*, extreme_ers, sh[[ow]] in[[terfaces]] n[[ames]]
+extreme_ers_show_sys-info.template, .*, extreme_ers, sh[[ow]] sys-[[info]]
+extreme_ers_show_vlan.template, .*, extreme_ers, sh[[ow]] vlan
+extreme_ers_show_mlt.template, .*, extreme_ers, sh[[ow]] ml[[t]]
+
+extreme_netiron_show_running-config_interface_ve.template, .*, extreme_netiron, sh[[ow]] ru[[nning-config]] i[[nterface]] v[[e]]
+extreme_netiron_show_lldp_neighbors_detail.template, .*, extreme_netiron, sh[[ow]] ll[[dp]] n[[eighbors]] d[[etail]]
+extreme_netiron_show_running-config_vlan.template, .*, extreme_netiron, sh[[ow]] ru[[nning-config]] v[[lan]]
+extreme_netiron_show_interfaces_brief.template, .*, extreme_netiron, sh[[ow]] in[[terfaces]] b[[rief]]
+extreme_netiron_show_interfaces.template, .*, extreme_netiron, sh[[ow]] in[[terfaces]]
+extreme_netiron_show_lag_brief.template, .*, extreme_netiron, sh[[ow]] lag b[[rief]]
+extreme_netiron_show_monitor.template, .*, extreme_netiron, sh[[ow]] mon[[itor]] [actual|config]
+extreme_netiron_show_metro.template, .*, extreme_netiron, sh[[ow]] met[[ro-ring]]
+extreme_netiron_show_span.template, .*, extreme_netiron, sh[[ow]] sp[[anning-tree]]
+extreme_netiron_show_topo.template, .*, extreme_netiron, sh[[ow]] to[[pology-group]]
+
+extreme_vsp_show_software.template, .*, extreme_vsp, sho[[w]] so[[ftware]]
+
 hp_comware_display_mac-address.template, .*, hp_comware, di[[splay]] mac-ad[[dress]]
 hp_comware_display_vlan_brief.template, .*, hp_comware, di[[splay]] v[[lan]] b[[rief]]
 hp_comware_display_clock.template, .*, hp_comware, di[[splay]] clo[[ck]]

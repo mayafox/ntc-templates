@@ -1,0 +1,24 @@
+Value Filldown INTERFACE ([0-9\/]+)
+Value Required NEIMAC (\w+\.\w+\.\w+)
+Value TTLSECS (\d+)
+Value NEIHOSTNAMETID (.+)
+Value NEIINTERFACE ([a-zA-Z0-9\/\s]+)
+Value NEIPVID (\d+|none)
+Value NEIMGMTIP (\d+\.\d+\.\d+\.\d+)
+Value NEILACPINDEX (\d+)
+Value NEIMAXFRAMESIZE (\d+)
+Value NEIOPMAU ([a-zA-Z0-9\-]+)
+Value NEICAPABILITIES (.+)
+
+Start
+  ^\w -> Continue.Record
+  ^Local\s+port:\s+${INTERFACE}
+  ^\s+\+\s+System\s+name\s+:\s+"${NEIHOSTNAMETID}"
+  ^\s+\+\s+Port\s+description\s+:\s+"${NEIINTERFACE}"
+  ^\s+Enabled\s+capabilities\s*:\s+${NEICAPABILITIES}
+  ^\s+\+\s+Port\s+VLAN\s+ID:\s+${NEIPVID}
+  ^\s+\+\s+Management\s+address\s+\(IPv4\):\s+${NEIMGMTIP}
+  ^\s+\+\s+Link\s+aggregation:\s+aggregated\s+\(aggregated\s+port\s+ifIndex:\s+${NEILACPINDEX}\)
+  ^\s+\+\s+Maximum\s+frame\s+size:\s+${NEIMAXFRAMESIZE}
+  ^\s+Operational\s+MAU\s+type\s+:\s+${NEIOPMAU}
+  ^\s+Neighbor:\s+${NEIMAC},\s+TTL\s+${TTLSECS}
